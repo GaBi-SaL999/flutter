@@ -28,6 +28,5 @@ jobs:
       - name: Upload IPA Artifact
         uses: actions/upload-artifact@v3
         with:
-            name: ipa-file
-            path: build/ios/ipa/*.ipa
-    
+          name: ipa-file
+          path: build/ios/ipa/*.ipa

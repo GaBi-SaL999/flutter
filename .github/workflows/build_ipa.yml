@@ -26,7 +26,8 @@ jobs:
         run: flutter build ipa --release
 
       - name: Upload IPA Artifact
-        uses: actions/upload-artifact@v3.1.3
+        uses: actions/upload-artifact@<commit-hash>
         with:
           name: ipa-file
           path: build/ios/ipa/*.ipa
+      

@@ -1,4 +1,4 @@
-name: esp32_cam_viewer
+name: camara_wifi
 description: "A new Flutter project."
 
 version: 1.0.0+1
@@ -13,17 +13,26 @@ dependencies:
   connectivity_plus: ^4.0.0
   cupertino_icons: ^1.0.8
   web_socket_channel: ^3.0.2
-  image: ^3.2.0
+  image: ^4.5.4
   webview_flutter: ^4.10.0
   wakelock_plus: ^1.2.10
-
+  showcaseview: ^4.0.1
+  shared_preferences: ^2.0.15
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
   flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.13.1
 
 flutter:
-
   uses-material-design: true
+  # Si deseas usar assets, inclúyelos aquí:
+  # assets:
+  #   - assets/placeholder.png
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/camara_icon.png"
+  remove_alpha_ios: true
